@@ -1,0 +1,29 @@
+.movie-row {
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.row-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.row-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 0.5rem;
+  scroll-behavior: smooth;
+}
+
+.row-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.row-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,65 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logo-container {
+  flex-shrink: 0;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem; 
+}
+
+.nav-links a {
+  font-size: 0.875rem;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f87171; 
+}
+
+.auth-buttons{
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.auth-buttons .btn {
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #fff;
+  border-radius: 0.25rem;
+  background: transparent;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.auth-buttons .btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.auth-buttons .btn-primary {
+  margin-left: 0.5rem;
+  background-color: #dc3545; 
+  color: #fff;
+  border: none;
+}
+
+.auth-buttons .btn-primary:hover {
+  background-color: #bb2d3b;
+}

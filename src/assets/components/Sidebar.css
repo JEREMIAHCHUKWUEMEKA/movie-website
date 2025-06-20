@@ -1,0 +1,40 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  .sidebar .close-btn {
+    /* width: rem; */
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: #f00;
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #f00;
+  }
+  
+  .sidebar .btn-danger {
+    width: 100%;
+  }
+  
