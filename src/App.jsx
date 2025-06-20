@@ -4,11 +4,11 @@ import Navbar from './assets/components/Navbar';
 import Home from './assets/pages/Home';
 import GenrePage from './assets/pages/GenrePage';
 import MovieDetail from './assets/pages/MovieDetail';
-import Recommendation from './assets/pages/Recommendation.JSX';
 import Login from './assets/pages/Login';
 import Signup from './assets/pages/Signup';
 import ForgotPassword from './assets/pages/ForgotPassword';
 import AuthGuard from './assets/components/AuthGuard';
+import Recommendation from './assets/pages/Recommendation'
 
 const App = () => {
   return (
