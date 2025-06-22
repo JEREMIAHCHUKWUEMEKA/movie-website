@@ -36,7 +36,7 @@ A modern movie streaming interface built with **React + Vite**, Firebase Authent
 
 ## ✅ Features
 
-- 🔐 Firebase Authentication (Email, Google)
+- 🔐 Firebase Authentication (Email)
 - 🌍 Dynamic movie data from TMDb
 - 📂 Paginated genre pages with Next/Prev buttons
 - 🎥 Video trailer integration
@@ -52,17 +52,14 @@ A modern movie streaming interface built with **React + Vite**, Firebase Authent
 
 > Replace with your actual screenshots
 
-![Home Page](./screenshots/home.png)  
-![Movie Details](./screenshots/detail.png)  
-![Recommendation](./screenshots/recommendation.png)  
-![Dark Mode Toggle](./screenshots/darkmode.png)
+![Home Page](./public/homepage.jpg)  
 
 ---
 
 ## 🔗 Live Demo
 
 🌍 [**View Live on Netlify**](https://movie-galaxy.netlify.app)  
-🔑 Use a test email or Google account to log in.
+🔑 Use a test email to log in.
 
 ---
 
@@ -87,8 +84,9 @@ A modern movie streaming interface built with **React + Vite**, Firebase Authent
    git clone https://github.com/JEREMIAHCHUKWUEMEKA/movie-website.git
    cd movie-website
 
+---
 
-    ## 📁 Project Structure 
+ ## 📁 Project Structure 
 src/
 ├── assets/
 │   ├── components/        
@@ -98,6 +96,7 @@ src/
 ├── App.jsx
 ├── main.jsx
 
+---
 
 ## 🌍 Environment Variables
 
@@ -117,6 +116,7 @@ VITE_FIREBASE_APP_ID
 
 VITE_TMDB_API_KEY
 
+---
 
 ## 🧠 What I Learned
 🔐 Securing Firebase credentials with Vite env vars
@@ -129,10 +129,12 @@ VITE_TMDB_API_KEY
 
 🔍 Search functionality across genres and titles
 
+---
 
 ## 👤 Author
 Jeremie Chukwuemeka
 
+---
 
 ## 🙏 Acknowledgments
 Big thanks to:
