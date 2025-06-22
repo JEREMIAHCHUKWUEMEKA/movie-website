@@ -1,10 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import './Navbar.css';
 import Sidebar from './Sidebar';
+import Search from './Search';
 
 const Navbar = () => {
+    const location = useLocation();
+
+    // Pages where you want to hide the search bar
+    const hideOnRoutes = ['/login', '/signup', '/forgot-password'];
+  
+    const shouldHideSearch = hideOnRoutes.includes(location.pathname);
+  
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [user, setUser] = useState(null);
 
@@ -28,6 +36,12 @@ const Navbar = () => {
             <img src="/MY LOGO.png" alt="Jeremie.C Logo" className="logo" />
           </Link>
         </div>
+        
+        {!shouldHideSearch && (
+        <div className="search-wrapper">
+          <Search />
+        </div>
+      )}
 
         {user ? (
           <button className="btn btn-outline-light" onClick={toggleSidebar}>

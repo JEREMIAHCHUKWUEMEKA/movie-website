@@ -28,7 +28,7 @@ const ForgotPassword = () => {
         <h2 className="forgot-title">Reset Password</h2>
         {message && <p className="message-text">{message}</p>}
         {error && <p className="error-text">{error}</p>}
-        <input
+        <input className='writeup'
           type="email"
           placeholder="Enter your email"
           value={email}

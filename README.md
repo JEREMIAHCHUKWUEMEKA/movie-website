@@ -1,12 +1,144 @@
-# React + Vite
+# 🎬 Movie Galaxy – Movie Streaming App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern movie streaming interface built with **React + Vite**, Firebase Authentication (Email + Google), and **The Movie Database (TMDb)** API. Users can browse by genre, view detailed movie information, and get personalized recommendations.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📑 Table of Contents
 
-## Expanding the ESLint configuration
+- [Overview](#overview)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Live Demo](#live-demo)
+- [Built With](#built-with)
+- [Setup & Installation](#setup--installation)
+- [Project Structure](#project-structure)
+- [Environment Variables](#environment-variables)
+- [What I Learned](#what-i-learned)
+- [Future Improvements](#future-improvements)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🔍 Overview
+
+**Movie Galaxy** allows users to:
+
+- 🔎 Browse and filter movies by genre
+- 📺 View trailers and details for each movie
+- 💡 Get personalized recommendations
+- 🔐 Sign in with Email/Password or Google
+- 🌓 Toggle between Dark and Light mode
+- 📱 Enjoy a responsive, mobile-first UI
+
+---
+
+## ✅ Features
+
+- 🔐 Firebase Authentication (Email, Google)
+- 🌍 Dynamic movie data from TMDb
+- 📂 Paginated genre pages with Next/Prev buttons
+- 🎥 Video trailer integration
+- 🔍 Search for any movie or genre
+- 🎭 Personal recommendation page using localStorage
+- 💡 Dark Mode toggle (default ON)
+- 🔒 Auth-guarded routes
+- 📱 Fully responsive (mobile & desktop)
+
+---
+
+## 🖼 Screenshots
+
+> Replace with your actual screenshots
+
+![Home Page](./screenshots/home.png)  
+![Movie Details](./screenshots/detail.png)  
+![Recommendation](./screenshots/recommendation.png)  
+![Dark Mode Toggle](./screenshots/darkmode.png)
+
+---
+
+## 🔗 Live Demo
+
+🌍 [**View Live on Netlify**](https://movie-galaxy.netlify.app)  
+🔑 Use a test email or Google account to log in.
+
+---
+
+## 🛠 Built With
+
+- ⚛️ React + Vite
+- 🔥 Firebase Authentication + Firestore
+- 🎬 TMDb API
+- 🧭 React Router
+- 📦 Axios
+- 💡 React Context (for dark mode)
+- 📱 CSS Flexbox/Grid + Mobile-first design
+- 🚀 Netlify for deployment
+
+
+---
+
+## ⚙️ Setup & Installation
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/JEREMIAHCHUKWUEMEKA/movie-website.git
+   cd movie-website
+
+
+    ## 📁 Project Structure 
+src/
+├── assets/
+│   ├── components/        
+│   ├── pages/             
+│   ├── Services/          
+│   ├── utils/                     
+├── App.jsx
+├── main.jsx
+
+
+## 🌍 Environment Variables
+
+Stored in .env and accessed via import.meta.env.VITE_...
+
+VITE_FIREBASE_API_KEY
+
+VITE_FIREBASE_AUTH_DOMAIN
+
+VITE_FIREBASE_PROJECT_ID
+
+VITE_FIREBASE_STORAGE_BUCKET
+
+VITE_FIREBASE_MESSAGING_SENDER_ID
+
+VITE_FIREBASE_APP_ID
+
+VITE_TMDB_API_KEY
+
+
+## 🧠 What I Learned
+🔐 Securing Firebase credentials with Vite env vars
+
+⚙️ Handling dynamic routing in React Router
+
+🎞 Working with external APIs (TMDb) for movies/trailers
+
+🔁 Pagination logic in batches (5-page chunks)
+
+🔍 Search functionality across genres and titles
+
+
+## 👤 Author
+Jeremie Chukwuemeka
+
+
+## 🙏 Acknowledgments
+Big thanks to:
+
+TMDb for the API
+
+Firebase for the auth & backend
+
+Netlify for fast and free hosting

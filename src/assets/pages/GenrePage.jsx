@@ -28,7 +28,6 @@ const GenrePage = () => {
     }
   };
 
-  // Determine current batch (groups of 5 pages)
   const currentBatch = Math.ceil(page / 5);
   const startPage = (currentBatch - 1) * 5 + 1;
   const endPage = Math.min(startPage + 4, totalPages);

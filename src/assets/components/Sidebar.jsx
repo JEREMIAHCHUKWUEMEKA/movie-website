@@ -22,7 +22,7 @@ const Sidebar = ({ isOpen, onClose }) => {
       </ul>
       
     <div className="sidebar-footer">
-    <SignOut />
+    <SignOut onSignOut={onClose} />
     </div>
     </div>
     

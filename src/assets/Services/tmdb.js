@@ -33,3 +33,13 @@ export const fetchMovieDetails = async (id) => {
   });
   return res.data;
 };
+
+export const fetchMoviesBySearch = async (query) => {
+  const res = await axios.get(`${BASE_URL}/search/movie`, {
+    params: {
+      api_key: API_KEY,
+      query
+    },
+  });
+  return res.data.results;
+};

@@ -1,0 +1,40 @@
+.search-container-a {
+    position: relative;
+    width: 100%;
+    max-width: 20rem;
+    margin: auto;
+    
+  }
+  
+  .search-input-a {
+    width: 20rem;
+    padding: 8px 12px;
+    border-radius: 16px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-results {
+    position: absolute;
+    top: 105%;
+    width: 100%;
+    background-color: white;
+    color: black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .search-results li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .search-results li:hover {
+    background-color: #f2f2f2;
+  }
+  

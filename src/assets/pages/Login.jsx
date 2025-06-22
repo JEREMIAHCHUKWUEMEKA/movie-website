@@ -25,14 +25,14 @@ const Login = () => {
       <form onSubmit={handleLogin} className="login-form">
         <h2 className="login-title">Login</h2>
         {error && <p className="error-text">{error}</p>}
-        <input
+        <input className='writeup'
           type="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-        <input
+        <input className='writeup'
           type="password"
           placeholder="Password"
           value={password}
