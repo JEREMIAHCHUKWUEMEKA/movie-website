@@ -1,13 +1,13 @@
 .search-container-a {
     position: relative;
     width: 100%;
-    max-width: 20rem;
+    min-width: 10rem;
     margin: auto;
     
   }
   
   .search-input-a {
-    width: 20rem;
+    width: 10rem;
     padding: 8px 12px;
     border-radius: 16px;
     border: 1px solid #ccc;
